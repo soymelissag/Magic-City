@@ -46,7 +46,7 @@ html{
 	height: 100%;
 }
 body{
-	background-image: url("./Users/melissagutierrez/Desktop/Magic-City/images/landing.gif");
+	background-image: url("/images/landing.gif");
 	background-size: cover;
 	background-position: center;
 	color:hotpink;
