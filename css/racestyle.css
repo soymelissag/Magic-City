@@ -1,0 +1,58 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body,html{height:100%;margin:0}#axis{font-family:inherit}#axis .domain{display:none}#axis .tick text{font-size:1rem}#axis text,#legend,button{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#legend{font-size:12px;padding:.5rem 0;display:inline-block;vertical-align:bottom}#legend .swatch{display:inline-block;vertical-align:middle;border-radius:.1rem;margin-right:.25rem;height:1rem;width:.75rem}#legend .label{display:inline-block;vertical-align:middle;font-size:1rem}#legend .discrete{margin-right:1rem;display:inline-block;cursor:pointer}#legend .discrete.filtered-out{opacity:.3}#legend .discrete:last-child{margin-right:0}button{background:0 0;color:#333;border-radius:0;border:none;outline:0;font-family:inherit;font-size:1rem;cursor:pointer;height:2rem;line-height:1rem;font-weight:700;padding-bottom:0;margin:0 0 .2rem;background:#fff}button:hover{background:#eee}button.selected{background:#2886B2;color:#fff}#replay{border-radius:3px;line-height:1.8rem;border:1px solid rgba(0,0,0,.1);background:0 0;display:inline-block;vertical-align:middle;margin-right:8px;background:#fff}#replay:hover{background:#eee}#replay:before{content:'';display:inline-block;background:url(./replay_icon.svg);width:10px;margin-right:.2rem;height:1.8rem;background-size:100% auto;background-position:center center;background-repeat:no-repeat;vertical-align:top}.btn-group{border-radius:3px;margin-right:8px;overflow:hidden;position:relative;display:inline-block;vertical-align:top;line-height:2rem;height:2rem}.btn-group:after{position:absolute;content:'';display:block;top:0;left:0;right:0;bottom:0;border-radius:.1rem;border:1px solid rgba(0,0,0,.1);pointer-events:none}/*# sourceMappingURL=style.css.map */
+
+.html {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 300;
+  color: #333;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* The navigation bar */
+.navbar {
+  z-index:1000;
+  position: fixed;
+  background-color: #78c0ff;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  transition: top 0.3s;
+  display: block;
+
+}
+#fl-layout-wrapper{
+max-width: 900px !important;
+
+
+}
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+.steps {
+  position: relative;
+}
+.steps:before {
+  top: 125px;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 2px;
+  background-color: #78c0ff;;
+  left: 50%;
+  margin-left: -1px;
+}

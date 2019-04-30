@@ -3,7 +3,7 @@
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
   color: #333;
@@ -18,6 +18,23 @@ body {
   background-attachment: fixed;
 }
 
+div.scrollmenu {
+  background-color: #ffffff;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: blue;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+  background-color: #ffffff;
+}
 .content {
   display: flex;
   margin: 0 auto;

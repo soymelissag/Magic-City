@@ -20,7 +20,11 @@
   display: block;
 
 }
+#fl-layout-wrapper{
+max-width: 900px !important;
 
+
+}
 /* Links inside the navbar */
 .navbar a {
   float: left;
