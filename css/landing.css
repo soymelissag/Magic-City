@@ -34,7 +34,7 @@ color: #ff4769;
   position: absolute;
 	opacity: 1;
   filter: alpha(opacity=50); /* For IE8 and earlier */
-  bottom: 200px;
+  bottom: 350px;
   right:500px;
   background-color: #78c0ff;;
   color: white;
