@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 
 /* The navigation bar */
 .navbar {
@@ -24,44 +25,27 @@ background: #fff;
 color: #ff4769;
 }
 
-/* Container holding the image and the text */
-.container {
-  position: relative;
+.centered {
+  position: absolute;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  bottom: 200px;
+  right: 200px;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* Bottom right text */
-.text-block {
-  position: absolute;
-	opacity: 1;
-  filter: alpha(opacity=50); /* For IE8 and earlier */
-  bottom: 350px;
-  right:500px;
-  background-color: #78c0ff;;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.button {
-  background-color: #78c0ff;
-  border: none;
-  color: white;
-  padding: 5px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
+
 html{
 	height: 100%;
 }
-body{
-	background-image: url("../images/LandingFinal.gif");
-	background-size: cover;
-	background-position: center;
-	color:hotpink;
-}
+
 h1{
 	font-size: 3em;
 	font-weight: bold;
@@ -95,4 +79,30 @@ hr{
   background-color: #FAA691;
   color: navy;
 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
