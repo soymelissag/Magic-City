@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+  <link rel='stylesheet' href='https://oss.maxcdn.com/semantic-ui/2.1.4/semantic.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -96,34 +99,7 @@
 
 
 
-                    <form name="copy-of-submit-to-google-sheet">
-                      <input name="type" type="text" placeholder="Type" required>
-                      <input name="name" type="text" placeholder="Name" required>
-                      <input name="neighborhood" type="text" placeholder="Neighborhood" required>
-                      <button type="submit">Send</button>
-                    </form>
-
-                    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-                    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-                    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
-
-          <script>
-            const scriptURL = "<https://script.google.com/macros/s/AKfycbxVN3Qz9J4HMbxcgTRkebWaDQ1U-4C4k1G1qxSQPjBmQLdprk2P/exec>"
-            const form = document.forms['copy-of-submit-to-google-sheet']
-
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => console.log('Success!', response))
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
-
-
-
-
-
-
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdx8AFKo4jznOzqGrvCwMqBZ290pUfgpTSVnS0jDxy-_lcSww/viewform?embedded=true" width="640" height="888" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 
 
 
@@ -139,25 +115,8 @@
         <iframe src="https://player.vimeo.com/video/333582306" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 <p><a href="https://vimeo.com/333582306">The Making of Magic City</a> from <a href="https://vimeo.com/user98010715">Melissa Gutierrez</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
             </div>
-      <div class="row">
-        <div class="col-lg-4 my-auto">
-          <div class="device-container">
-                  <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                </div>
-                <div class="button">
-                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -168,10 +127,6 @@ For more information, feel free to reach out! <br>
 <a href="mailto:himelissagutierrez@gmail.com">
   <img border="0" alt="envelope" src="images/envelope.png" width="100" height="100">
 
-
-
-
-        </li>
       </ul>
     </div>
   </section>
