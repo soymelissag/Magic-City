@@ -96,17 +96,20 @@
 
 
 
-                    <form name="submit-to-google-sheet">
+                    <form name="copy-of-submit-to-google-sheet">
                       <input name="type" type="text" placeholder="Type" required>
                       <input name="name" type="text" placeholder="Name" required>
                       <input name="neighborhood" type="text" placeholder="Neighborhood" required>
                       <button type="submit">Send</button>
                     </form>
 
-
+                    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+                    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+                    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+                    
           <script>
             const scriptURL = "<https://script.google.com/macros/s/AKfycbwH0iVsQe3rMdiRFBnVIt4TScc32PExsQljGCvsdg/exec>"
-            const form = document.forms['submit-to-google-sheet']
+            const form = document.forms['copy-of-submit-to-google-sheet']
 
             form.addEventListener('submit', e => {
               e.preventDefault()
