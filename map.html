@@ -97,9 +97,9 @@
 
 
                     <form name="submit-to-google-sheet">
-                      <input name="Type" type="text" placeholder="Type" required>
-                      <input name="Name" type="text" placeholder="Name" required>
-                      <input name="Neighborhood" type="text" placeholder="Neighborhood" required>
+                      <input name="type" type="text" placeholder="Type" required>
+                      <input name="name" type="text" placeholder="Name" required>
+                      <input name="neighborhood" type="text" placeholder="Neighborhood" required>
                       <button type="submit">Send</button>
                     </form>
 
@@ -108,7 +108,7 @@
 <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
 
           <script>
-            const scriptURL = "<https://script.google.com/macros/s/AKfycbz1ibQQe9WuL1WBKQbPteI3BwrtWFj1mvn90uwJaykUJKyufUbB/exec>"
+            const scriptURL = "<https://script.google.com/macros/s/AKfycbwH0iVsQe3rMdiRFBnVIt4TScc32PExsQljGCvsdg/exec>"
             const form = document.forms['submit-to-google-sheet']
 
             form.addEventListener('submit', e => {
